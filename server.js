@@ -64,11 +64,11 @@ app.put('/logs/:id', async (req, res) => {
     }   else {
         req.body.shipIsBroken = false;
     }
-    try {
+    try { 
         await Log.findOneAndUpdate({'_id': req.params.id}, req.body, { new:true })
         .then(()=> {
             res.redirect(`/logs/${req.params.id}`)
-        })
+        }) 
     } catch(error){
         res.status(400).send({message: error.message})
     }  
