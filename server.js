@@ -71,9 +71,9 @@ app.put('/logs/:id', async (req, res) => {
         })
     } catch(error){
         res.status(400).send({message: error.message})
-    }
-}) 
-  
+    } 
+})  
+   
 
 
 

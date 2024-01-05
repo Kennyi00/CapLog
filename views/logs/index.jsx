@@ -9,7 +9,7 @@ function Index (props) {
             {
               props.logs.map((log) => {
                 return (
-                    <li key={log.id}>  
+                    <li key={log.id}>   
                       
                        <a href={`/logs/${log._id}`}>{log.title}</a> is {log.entry} and {log.shipIsBroken ? 'ship is broken': 'ship is not broken'}
                        <form action={`/logs/${log._id}?_method=DELETE`} method="POST">
