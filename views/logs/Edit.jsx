@@ -12,7 +12,7 @@ function Edit (props) {
                 Ship Is Broken: {shipIsBroken?<input type="checkbox" name="shipIsBroken" defaultChecked />: <input type="checkbox" name="shipIsBroken"/>}<br/>
                 <input type="submit" value="Update Log" />
             </form>
-        </div> 
+        </div>  
     )
 }
 
