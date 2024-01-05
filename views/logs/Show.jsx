@@ -9,7 +9,7 @@ function Show(props) {
                 The {props.log.title} is {props.log.entry} and {props.log.shipIsBroken? 'It is Broken': 'It is not Broken' }
             </p>
 
-         </div>
+         </div> 
         )
     }
 
